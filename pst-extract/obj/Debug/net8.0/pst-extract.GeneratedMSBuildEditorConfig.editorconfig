@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = pst_extract
-build_property.ProjectDir = C:\Users\Dell\Workstation\SoftwareDevelopment\Dotnet\NugetLibraries\Personal\PSTExtractionLibrary\pst-extract\pst-extract\
+build_property.ProjectDir = C:\Users\Dell\Workstation\SoftwareDevelopment\Dotnet\NugetLibraries\Personal\PSTExtractionLibrary\pst-extract\public-pst-extract\pst-extract\pst-extract\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
