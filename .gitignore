@@ -1,1 +1,7 @@
 /.vs/*
+core/obj/
+core/bin/
+pst-extract/bin/
+pst-extract/obj/
+XstReader.Api/obj/
+XstReader.Api/bin/

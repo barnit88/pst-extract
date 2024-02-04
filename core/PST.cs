@@ -1,27 +1,29 @@
-﻿using Core.PST.Headers;
-using Core.PST.Pages.Base;
-using Core.PST.Pages.BTree;
-using Core.PST.Pages.Unicode;
+﻿using core.NDBLayer.Headers;
+using core.NDBLayer.Pages.BTree;
 using System.IO.MemoryMappedFiles;
 
-namespace Core.PST
+namespace core
 {
     public class PST
     {
         public Header Header { get; set; }
-        public Page NodeBTPage { get; set; }
-        public Page BlockBTPage { get; set; }
-
+        public BTreePage NodeBTPage { get; set; }
+        public BTreePage BlockBTPage { get; set; }
+        public MemoryMappedFile MemoryMappedPSTFile { get; set; }
         public PST(MemoryMappedFile file)
         {
+            this.MemoryMappedPSTFile = file;
             this.Header = new Header(file);
             if (this.Header.IsUnicode)
             {
+                //Reference to this NDB Layer Pages are stored in root of the header of the PST file
                 this.NodeBTPage =
-                    new UnicodeBTreePage(file, this.Header.UnicodeHeader.Root.NBTBREF, BTreeType.NBT);
+                    new BTreePage(file, this.Header.UnicodeHeader.Root.NBTBREF, BTreeType.NBT,
+                    this.Header.UnicodeHeader.EncodingFriendlyName);
 
                 this.BlockBTPage =
-                    new UnicodeBTreePage(file, this.Header.UnicodeHeader.Root.BBTBREF, BTreeType.BBT);
+                    new BTreePage(file, this.Header.UnicodeHeader.Root.BBTBREF, BTreeType.BBT,
+                    this.Header.UnicodeHeader.EncodingFriendlyName);
             }
         }
     }

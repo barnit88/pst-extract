@@ -5,12 +5,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Pages\Unicode\UnicodePage.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Pages\Unicode\UnicodePage.txt" />
-  </ItemGroup>
-
 </Project>
