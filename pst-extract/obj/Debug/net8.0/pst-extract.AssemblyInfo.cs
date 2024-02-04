@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pst-extract")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6f896f360492c6c4d0e531c697eba4f489f6dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("pst-extract")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pst-extract")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

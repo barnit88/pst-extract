@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pst-extract", "pst-extract\pst-extract.csproj", "{ADD37C69-B214-4361-924A-97F597F3417A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pst-extract", "pst-extract\pst-extract.csproj", "{ADD37C69-B214-4361-924A-97F597F3417A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "core\core.csproj", "{FED59A1C-730F-4DE2-A805-16A950BF5A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core", "core\core.csproj", "{FED59A1C-730F-4DE2-A805-16A950BF5A83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
